@@ -157,43 +157,79 @@
 //     size = "NA"
 //   }
 
-var education = 'no high school diploma';
 
-var salary = 0;
+//++++++++++++++++++++++++++
 
-switch (education) {
-  case "no high school diploma":
-      salary = 25,636;
-      console.log("In 2015, a person with " + education + " earned an average of " + "$" + salary + "/year.");
-      break; 
+// var education = 'no high school diploma';
+
+// var salary = 0;
+
+// switch (education) {
+//   case "no high school diploma":
+//       salary = 25,636;
+//       console.log("In 2015, a person with " + education + " earned an average of " + "$" + salary + "/year.");
+//       break; 
       
-  case "a high school diploma":
-      salary = 35,256;
-      console.log("In 2015, a person with " + education + " earned an average of " + "$" + salary+ "/year.");
-      break; 
+//   case "a high school diploma":
+//       salary = 35,256;
+//       console.log("In 2015, a person with " + education + " earned an average of " + "$" + salary+ "/year.");
+//       break; 
       
-  case "an Associate's degree":
-      salary = 41,496;
-      console.log("In 2015, a person with " + education + " earned an average of " + "$" + salary + "/year.");
-      break; 
+//   case "an Associate's degree":
+//       salary = 41,496;
+//       console.log("In 2015, a person with " + education + " earned an average of " + "$" + salary + "/year.");
+//       break; 
       
-  case "a Bachelor's Degree":
-      salary = 59,124;
-      console.log("In 2015, a person with " + education + " earned an average of " + "$" + salary + "/year.");
-      break; 
+//   case "a Bachelor's Degree":
+//       salary = 59,124;
+//       console.log("In 2015, a person with " + education + " earned an average of " + "$" + salary + "/year.");
+//       break; 
       
-  case "a Master's degree":
-      salary = 69,732;
-      console.log("In 2015, a person with " + education + " earned an average of " + "$" + salary + "/year.");
-      break; 
+//   case "a Master's degree":
+//       salary = 69,732;
+//       console.log("In 2015, a person with " + education + " earned an average of " + "$" + salary + "/year.");
+//       break; 
       
-  case "a Professional degree":
-      salary = 89,960;
-      console.log("In 2015, a person with " + education + " earned an average of " + "$" + salary + "/year.");
-      break; 
+//   case "a Professional degree":
+//       salary = 89,960;
+//       console.log("In 2015, a person with " + education + " earned an average of " + "$" + salary + "/year.");
+//       break; 
       
-  case "a Doctoral degree":
-      salary = 84,396;
-      console.log("In 2015, a person with " + education + " earned an average of " + "$" + salary + "/year.");
-      break; 
+//   case "a Doctoral degree":
+//       salary = 84,396;
+//       console.log("In 2015, a person with " + education + " earned an average of " + "$" + salary + "/year.");
+//       break; 
+// }
+
+
+var num = 99;
+
+while (num > 0) {
+  
+    if (num === 1) {
+        console.log(num + " bottle of juice on the wall! "
+                    + num + " bottle of juice! Take one down, pass it around... "
+                    + (num-1) + " bottles of juice on the wall!");
+    }
+    // Second-last iteration. Note occurances of bottleS, bottleS, bottle
+    else if (num === 2){
+        console.log(num + " bottles of juice on the wall! "
+                    + num + " bottles of juice! Take one down, pass it around... "
+                    + (num-1) + " bottle of juice on the wall!");
+    }
+    // All other iterations. Note occurances of bottleS, bottleS, bottleS
+    else {
+        console.log(num + " bottles of juice on the wall! "
+                    + num + " bottles of juice! Take one down, pass it around... "
+                    + (num-1) + " bottles of juice on the wall!");
+    }
+    num = num - 1;
 }
+
+
+  // check value of num
+    // print lyrics using num
+    // don't forget to check pluralization on the last line!
+    // decrement num
+
+    99 bottles of juice on the wall! 99 bottles of juice! Take one down, pass it around... 98 bottles of juice on the wall!
