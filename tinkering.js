@@ -202,34 +202,68 @@
 // }
 
 
-var num = 99;
+// var num = 99;
 
-while (num > 0) {
+// while (num > 0) {
   
-    if (num === 1) {
-        console.log(num + " bottle of juice on the wall! "
-                    + num + " bottle of juice! Take one down, pass it around... "
-                    + (num-1) + " bottles of juice on the wall!");
+//     if (num === 1) {
+//         console.log(num + " bottle of juice on the wall! "
+//                     + num + " bottle of juice! Take one down, pass it around... "
+//                     + (num-1) + " bottles of juice on the wall!");
+//     }
+//     // Second-last iteration. Note occurances of bottleS, bottleS, bottle
+//     else if (num === 2){
+//         console.log(num + " bottles of juice on the wall! "
+//                     + num + " bottles of juice! Take one down, pass it around... "
+//                     + (num-1) + " bottle of juice on the wall!");
+//     }
+//     // All other iterations. Note occurances of bottleS, bottleS, bottleS
+//     else {
+//         console.log(num + " bottles of juice on the wall! "
+//                     + num + " bottles of juice! Take one down, pass it around... "
+//                     + (num-1) + " bottles of juice on the wall!");
+//     }
+//     num = num - 1;
+// }
+
+
+//   // check value of num
+//     // print lyrics using num
+//     // don't forget to check pluralization on the last line!
+//     // decrement num
+
+//     99 bottles of juice on the wall! 99 bottles of juice! Take one down, pass it around... 98 bottles of juice on the wall!
+
+
+//++++++++++++++++++++++
+
+// let amounts = [61.00, 52.25, 112.99, 5.00]; 
+// let total = 0;
+// for (let i = 0; i < amounts.length; i++) {
+//   total += amounts[i];
+// }
+// console.log('Order total is: ', total);
+
+//+++++++++++++++++++++++
+
+function makeLine(length) {
+    var line = "";
+    for (var j = 1; j <= length; j++) {
+      line += "* "
     }
-    // Second-last iteration. Note occurances of bottleS, bottleS, bottle
-    else if (num === 2){
-        console.log(num + " bottles of juice on the wall! "
-                    + num + " bottles of juice! Take one down, pass it around... "
-                    + (num-1) + " bottle of juice on the wall!");
-    }
-    // All other iterations. Note occurances of bottleS, bottleS, bottleS
-    else {
-        console.log(num + " bottles of juice on the wall! "
-                    + num + " bottles of juice! Take one down, pass it around... "
-                    + (num-1) + " bottles of juice on the wall!");
-    }
-    num = num - 1;
+    return line + "\n";
 }
+  
 
+// your code goes here.  Make sure you call makeLine() in your own code.
 
-  // check value of num
-    // print lyrics using num
-    // don't forget to check pluralization on the last line!
-    // decrement num
-
-    99 bottles of juice on the wall! 99 bottles of juice! Take one down, pass it around... 98 bottles of juice on the wall!
+function buildTriangle(num) {
+    let triangle = ""
+       for(let i = 1; i <= num; i++) {
+           
+           triangle += makeLine(i);
+       
+       }
+          return triangle
+   }
+   console.log(buildTriangle(10))
