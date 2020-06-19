@@ -246,24 +246,96 @@
 
 //+++++++++++++++++++++++
 
-function makeLine(length) {
-    var line = "";
-    for (var j = 1; j <= length; j++) {
-      line += "* "
-    }
-    return line + "\n";
-}
+// function makeLine(length) {
+//     var line = "";
+//     for (var j = 1; j <= length; j++) {
+//       line += "* "
+//     }
+//     return line + "\n";
+// }
   
 
-// your code goes here.  Make sure you call makeLine() in your own code.
+// // your code goes here.  Make sure you call makeLine() in your own code.
 
-function buildTriangle(num) {
-    let triangle = ""
-       for(let i = 1; i <= num; i++) {
+// function buildTriangle(num) {
+//     let triangle = ""
+//        for(let i = 1; i <= num; i++) {
            
-           triangle += makeLine(i);
+//            triangle += makeLine(i);
        
-       }
-          return triangle
-   }
-   console.log(buildTriangle(10))
+//        }
+//           return triangle
+//    }
+//    console.log(buildTriangle(10))
+
+// ++++++++++++++++++++++++++++++++
+// var laugh = function(number) {
+//     let laughSound = ""
+//     for (i = 0; i < number; i++){
+//         laughSound += "ha"
+// }
+//     laughSound = laughSound + '!'
+//      return laughSound;
+// }
+    
+// console.log(laugh(3));
+
+//+++++++++++++++++++++++++++++++++
+
+// var cry = function crySound() {
+//     var sound = "boohoo!"
+//     console.log(sound)
+//     return sound
+// };
+
+// cry();
+
+// ++++++++++++++++++++++++++++++++++
+
+// function emotions(myString, myFunc) {
+//     console.log("I am " + myString + ", " + myFunc(2));
+// }
+
+// your code goes here
+// Call the emotions() function with two arguments
+// Argument 1 - "happy" string
+// Argument 2 - an inline function expression
+
+// emotions("happy", function(num) {
+//     let laughSound = "";
+//     for (let i = 0; i < num; i++) {
+//         laughSound = laughSound + "ha";
+//     }
+//     laughSound = laughSound + '!';
+//      return laughSound;
+// });
+    
+
+//function will receive an array of stations
+//each station will also be an array  with a name, capcity, venue type 
+//appropriate station -> capacity of >= 20, a school OR comminity center
+
+const stations = [
+    ['Big Bear Donair', 10, 'restaurant'],
+    ['Bright Lights Elementary', 50, 'school'],
+    ['Moose Mountain Community Centre', 45, 'community centre']
+  ];
+  
+
+const chooseStations = (stations) => {
+    // let name = stations[0];
+    // let capacity = stations[1];
+    // let locationType = stations [2];
+    let goodStations = [];
+
+    for (let i = 0; i < stations.length; i++) {
+
+        if (stations[1] >= 20 && stations[2] === "school" || stations[2] === "community centre") {
+           stations[0].push(goodStations);
+        }
+    }
+    return goodStations;
+}
+
+console.log(chooseStations(stations))
+
