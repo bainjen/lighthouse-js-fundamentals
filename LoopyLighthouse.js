@@ -24,3 +24,13 @@ for (let i = 100; i <= 200; i++) {
     console.log(i)
   }
 }
+
+//range is an array of 2 nums representing the start and end values for the loop
+//multiples is an array of 2 nums representing the multiples you want to replace with words
+// words should be an array of 2 strings, representing the words that will replace the multiples 
+//example: loopyLighthouse([15, 90], [2, 5], ["Batty", "Beacon"]);
+//function should console.log all the numbers from 15-90, except replacing multiple of 2 with 'Batty' and mult of 5 with "Beacon"--mult 2 & 5 'BattyBeacon'
+
+const loopyLighthouse = (range, multiples, words) => {
+
+}
