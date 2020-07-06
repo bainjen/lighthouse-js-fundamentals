@@ -125,7 +125,7 @@ var donuts = [
   { type: "Boston Cream", cost: 5.99 }
 ];
 
-console.log(donuts[1].type)
+// console.log(donuts[1].type)
 
 donuts.forEach(donut => console.log(donut.type + " donuts cost $" + donut.cost + " each"))
 
